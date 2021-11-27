@@ -37,17 +37,12 @@ config = [
             tags: ['docker'],
             builds: ['release'],
         ]],
-        ['debian-9', [
-            numCores: 4,
-            tags: ['docker'],
-            builds: ['release'],
-        ]],
         ['debian-10', [
             numCores: 4,
             tags: ['docker'],
             builds: ['release'],
         ]],
-        ['ubuntu-16.04', [
+        ['debian-11', [
             numCores: 4,
             tags: ['docker'],
             builds: ['release'],
@@ -62,12 +57,12 @@ config = [
             tags: ['docker'],
             builds: ['release'],
         ]],
-        ['fedora-33', [
+        ['fedora-34', [
             numCores: 4,
             tags: ['docker'],
             builds: ['release'],
         ]],
-        ['fedora-34', [
+        ['fedora-35', [
             numCores: 4,
             tags: ['docker'],
             builds: ['release'],
@@ -83,7 +78,7 @@ config = [
             ],
         ]],
         // One extra debug build for leak checking.
-        ['fedora-34', [
+        ['fedora-35', [
             numCores: 4,
             tags: ['docker', 'LeakSanitizer'],
             builds: ['debug'],
@@ -95,7 +90,7 @@ config = [
             ],
         ]],
         // One extra debug build with static libs, UBSan and hardening flags.
-        ['fedora-34', [
+        ['fedora-35', [
             numCores: 4,
             tags: ['docker', 'UBSanitizer'],
             builds: ['debug'],
