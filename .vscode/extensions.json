@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "matepek.vscode-catch2-test-adapter",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "guyutongxue.cpp-reference",
+        "cschlosser.doxdocgen",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer"
+    ]
+}
