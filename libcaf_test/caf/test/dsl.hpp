@@ -337,6 +337,14 @@ public:
     return *this;
   }
 
+  expect_clause& check(std::function<void(Ts...)> check) {
+    peek_ = [this, check] {
+      auto content = extract<Ts...>(dest_, src_line_);
+      std::apply(check, content);
+    };
+    return *this;
+  }
+
 protected:
   void run_once() {
     auto dptr = dynamic_cast<caf::blocking_actor*>(dest_);
